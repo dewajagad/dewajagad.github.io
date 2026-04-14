@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Subscribe to the SmartStockUS free weekly newsletter — market insights, new guides, and one actionable tip every Sunday." />
+  <title>Free Newsletter — SmartStockUS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>" />
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand"><div class="brand-icon">S</div>SmartStockUS</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="beginner-guide.html">Beginner Guide</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="newsletter.html" class="nav-cta active">Free Newsletter</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<section class="hero" style="padding:4rem 1.5rem">
+  <div class="hero-content">
+    <div class="hero-badge">📧 Every Sunday Morning — Free Forever</div>
+    <h1>The Smartest 5 Minutes of Your Sunday</h1>
+    <p>One email per week. New articles, what we're watching in the market, and one actionable investing tip you can actually use. No hype, no fluff, no hidden upsells.</p>
+    <div class="hero-actions">
+      <form onsubmit="handleSubscribe(event)" style="display:flex; gap:.75rem; flex-wrap:wrap; justify-content:center; margin-top:.5rem">
+        <input type="email" placeholder="Enter your email address" required style="padding:.75rem 1.25rem; border-radius:8px; border:2px solid rgba(255,255,255,.3); background:rgba(255,255,255,.12); color:#fff; font-size:1rem; min-width:260px; outline:none; font-family:inherit" />
+        <button type="submit" class="btn btn-white">Subscribe Free →</button>
+      </form>
+    </div>
+    <p style="font-size:.82rem; color:rgba(255,255,255,.55); margin-top:1rem">No spam. Unsubscribe anytime with one click. We take your inbox seriously.</p>
+  </div>
+</section>
+<div style="max-width:700px; margin:3rem auto; padding:0 1.5rem">
+  <h2 style="text-align:center; margin-bottom:2rem">What's In Each Issue</h2>
+  <div class="value-cards">
+    <div class="value-card"><h4>📰 New Articles</h4><p>Every new post we publish, summarized and linked so you never miss one.</p></div>
+    <div class="value-card"><h4>🌐 Market Watch</h4><p>Plain-English take on what happened in the US market that week — without the drama.</p></div>
+    <div class="value-card"><h4>💡 Weekly Tip</h4><p>One specific, actionable investing insight. Not vague advice — something you can actually do.</p></div>
+    <div class="value-card"><h4>📚 What We're Reading</h4><p>A book chapter, article, or research piece worth your time. Curated, not sponsored.</p></div>
+  </div>
+  <div class="callout" style="margin-top:2rem">
+    <p><strong>Our promise:</strong> We will never sell your email address, never send more than one email per week, and never use your subscription to upsell you into a paid service. This newsletter exists to educate — that's it.</p>
+  </div>
+</div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-bottom" style="justify-content:center;border:none;padding-top:0">
+      <span>© 2026 SmartStockUS — Educational purposes only. Not financial advice.</span>
+    </div>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
