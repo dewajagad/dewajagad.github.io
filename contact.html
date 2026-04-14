@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — SmartStockUS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>" />
+</head>
+<body>
+<header><nav class="navbar"><div class="navbar-inner"><a href="index.html" class="brand"><div class="brand-icon">S</div>SmartStockUS</a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li></ul></div></nav></header>
+<div style="max-width:600px; margin:3rem auto; padding:0 1.5rem; text-align:center">
+  <h1>Get in Touch</h1>
+  <p style="color:var(--text-muted); margin-bottom:2.5rem">Have a question, topic suggestion, or spotted an error? We'd love to hear from you.</p>
+  <div style="background:var(--surface); border-radius:var(--radius); box-shadow:var(--shadow); padding:2rem; text-align:left">
+    <form onsubmit="handleSubscribe(event)">
+      <div style="margin-bottom:1rem">
+        <label style="display:block; font-weight:600; margin-bottom:.4rem; font-size:.88rem">Your Name</label>
+        <input type="text" placeholder="Jane Smith" style="width:100%; padding:.7rem 1rem; border:1px solid var(--border); border-radius:8px; font-size:.9rem; font-family:inherit; outline:none" />
+      </div>
+      <div style="margin-bottom:1rem">
+        <label style="display:block; font-weight:600; margin-bottom:.4rem; font-size:.88rem">Email Address</label>
+        <input type="email" placeholder="jane@example.com" required style="width:100%; padding:.7rem 1rem; border:1px solid var(--border); border-radius:8px; font-size:.9rem; font-family:inherit; outline:none" />
+      </div>
+      <div style="margin-bottom:1.5rem">
+        <label style="display:block; font-weight:600; margin-bottom:.4rem; font-size:.88rem">Message</label>
+        <textarea placeholder="What's on your mind?" rows="5" style="width:100%; padding:.7rem 1rem; border:1px solid var(--border); border-radius:8px; font-size:.9rem; font-family:inherit; outline:none; resize:vertical"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center">Send Message</button>
+    </form>
+  </div>
+  <p style="margin-top:1.5rem; font-size:.85rem; color:var(--text-muted)">We read every message, though we can't always respond individually. For newsletter unsubscribes, use the link in any email.</p>
+</div>
+<footer><div class="footer-inner"><div class="footer-bottom" style="justify-content:center;border:none;padding-top:0"><span>© 2026 SmartStockUS</span></div></div></footer>
+<script src="app.js"></script>
+</body>
+</html>
