@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SmartStockUS — Your friendly guide to investing in US stocks. Learn market basics, strategies, and how to build real wealth through the American stock market." />
+  <meta name="keywords" content="US stock market, stock investing, S&P 500, dividend investing, stock analysis, beginner investing" />
+  <meta name="author" content="SmartStockUS" />
+  <meta property="og:title" content="SmartStockUS — Invest Smarter in the US Market" />
+  <meta property="og:description" content="Friendly, honest, and practical guides to investing in US stocks." />
+  <meta property="og:type" content="website" />
+  <title>SmartStockUS — Invest Smarter in the US Market</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">S</div>
+        SmartStockUS
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="beginner-guide.html">Beginner Guide</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="newsletter.html" class="nav-cta">Free Newsletter</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- TICKER STRIP -->
+<div class="ticker-strip">
+  <div class="ticker-inner" id="ticker">
+    <span class="ticker-item">AAPL <span class="up">▲ 1.2%</span></span>
+    <span class="ticker-item">MSFT <span class="up">▲ 0.8%</span></span>
+    <span class="ticker-item">GOOGL <span class="down">▼ 0.3%</span></span>
+    <span class="ticker-item">AMZN <span class="up">▲ 2.1%</span></span>
+    <span class="ticker-item">NVDA <span class="up">▲ 3.4%</span></span>
+    <span class="ticker-item">TSLA <span class="down">▼ 1.1%</span></span>
+    <span class="ticker-item">META <span class="up">▲ 0.6%</span></span>
+    <span class="ticker-item">BRK.B <span class="up">▲ 0.4%</span></span>
+    <span class="ticker-item">JPM <span class="up">▲ 0.9%</span></span>
+    <span class="ticker-item">JNJ <span class="down">▼ 0.2%</span></span>
+    <span class="ticker-item">SPY <span class="up">▲ 0.7%</span></span>
+    <span class="ticker-item">QQQ <span class="up">▲ 1.0%</span></span>
+    <span class="ticker-item">DIA <span class="up">▲ 0.5%</span></span>
+    <span class="ticker-item">VTI <span class="up">▲ 0.6%</span></span>
+    <!-- Duplicate for seamless loop -->
+    <span class="ticker-item">AAPL <span class="up">▲ 1.2%</span></span>
+    <span class="ticker-item">MSFT <span class="up">▲ 0.8%</span></span>
+    <span class="ticker-item">GOOGL <span class="down">▼ 0.3%</span></span>
+    <span class="ticker-item">AMZN <span class="up">▲ 2.1%</span></span>
+    <span class="ticker-item">NVDA <span class="up">▲ 3.4%</span></span>
+    <span class="ticker-item">TSLA <span class="down">▼ 1.1%</span></span>
+    <span class="ticker-item">META <span class="up">▲ 0.6%</span></span>
+    <span class="ticker-item">BRK.B <span class="up">▲ 0.4%</span></span>
+    <span class="ticker-item">JPM <span class="up">▲ 0.9%</span></span>
+    <span class="ticker-item">JNJ <span class="down">▼ 0.2%</span></span>
+    <span class="ticker-item">SPY <span class="up">▲ 0.7%</span></span>
+    <span class="ticker-item">QQQ <span class="up">▲ 1.0%</span></span>
+    <span class="ticker-item">DIA <span class="up">▲ 0.5%</span></span>
+    <span class="ticker-item">VTI <span class="up">▲ 0.6%</span></span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">
+      📈 Updated Weekly — No Hype, Just Honest Investing Insights
+    </div>
+    <h1>Investing in US Stocks Doesn't Have to Be Scary</h1>
+    <p>Real talk, no jargon. Whether you're putting in your first $100 or rebalancing a portfolio, we break down the US market in plain English — so you can actually make moves that matter.</p>
+    <div class="hero-actions">
+      <a href="beginner-guide.html" class="btn btn-white">Start Here (Beginners)</a>
+      <a href="#latest-posts" class="btn btn-outline-white">Read Latest Posts</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <span class="stat-value">47+</span>
+      <span class="stat-label">In-Depth Guides</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">12K+</span>
+      <span class="stat-label">Monthly Readers</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">100%</span>
+      <span class="stat-label">Independent Content</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">Free</span>
+      <span class="stat-label">Always Free to Read</span>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+  <div class="main-section">
+    <div class="layout">
+
+      <!-- LEFT: POSTS -->
+      <main>
+        <!-- Featured Post -->
+        <div class="section-title">
+          <h2>Featured</h2>
+          <div class="section-title-line"></div>
+        </div>
+
+        <article class="featured-post">
+          <div class="featured-img">📊</div>
+          <div class="featured-body">
+            <span class="post-tag tag-beginner">Beginner Guide</span>
+            <h2><a href="articles/start-investing.html">How to Start Investing in US Stocks With Just $100</a></h2>
+            <div class="post-meta">
+              <span>📅 April 12, 2026</span>
+              <span>⏱ 9 min read</span>
+              <span>👁 4.2K views</span>
+            </div>
+            <p>You don't need a finance degree or a fat bank account to get started. I'm going to walk you through exactly how to open a brokerage account, pick your first investment, and press that buy button without having a panic attack.</p>
+            <a href="articles/start-investing.html" class="read-more">Read the full guide →</a>
+          </div>
+        </article>
+
+        <!-- Latest Posts -->
+        <div class="section-title" id="latest-posts">
+          <h2>Latest Posts</h2>
+          <div class="section-title-line"></div>
+          <a href="#" class="view-all">View all →</a>
+        </div>
+
+        <div class="post-grid">
+          <article class="post-card">
+            <div class="card-img card-img-1">📉</div>
+            <div class="card-body">
+              <span class="post-tag tag-strategy">Strategy</span>
+              <h3><a href="articles/dollar-cost-averaging.html">Dollar-Cost Averaging: The Lazy Investor's Secret Weapon</a></h3>
+              <p>Forget trying to time the market. Here's why buying at regular intervals beats overthinking every purchase — backed by real numbers.</p>
+              <div class="card-footer-meta">
+                <span>📅 Apr 10, 2026</span>
+                <span>⏱ 7 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="card-img card-img-2">🏦</div>
+            <div class="card-body">
+              <span class="post-tag tag-analysis">Analysis</span>
+              <h3><a href="articles/sp500-explained.html">The S&P 500 Explained Like You're at a Backyard BBQ</a></h3>
+              <p>What it is, what's in it, how it's built, and why it might just be the only "stock" you ever need to own.</p>
+              <div class="card-footer-meta">
+                <span>📅 Apr 8, 2026</span>
+                <span>⏱ 8 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="card-img card-img-3">💸</div>
+            <div class="card-body">
+              <span class="post-tag tag-dividend">Dividend</span>
+              <h3><a href="articles/dividend-investing.html">Dividend Investing: Building Income While You Sleep</a></h3>
+              <p>Imagine your portfolio sending you a paycheck every quarter. Here's how dividend investing actually works, and which stocks are worth your attention.</p>
+              <div class="card-footer-meta">
+                <span>📅 Apr 6, 2026</span>
+                <span>⏱ 11 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="card-img card-img-4">🧠</div>
+            <div class="card-body">
+              <span class="post-tag tag-mindset">Mindset</span>
+              <h3><a href="articles/investor-mistakes.html">5 Mistakes That Quietly Kill New Investors' Returns</a></h3>
+              <p>Most beginners don't blow up from one big mistake — they die by a thousand small ones. These are the five I see over and over again.</p>
+              <div class="card-footer-meta">
+                <span>📅 Apr 4, 2026</span>
+                <span>⏱ 6 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="card-img card-img-5">📈</div>
+            <div class="card-body">
+              <span class="post-tag tag-growth">Growth Stocks</span>
+              <h3><a href="articles/growth-vs-value.html">Growth vs. Value Stocks: Which Side Are You On?</a></h3>
+              <p>Both camps have their champions — and their casualties. I break down the real difference and help you figure out which fits your style.</p>
+              <div class="card-footer-meta">
+                <span>📅 Apr 2, 2026</span>
+                <span>⏱ 9 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="card-img card-img-6">🏛️</div>
+            <div class="card-body">
+              <span class="post-tag tag-market">Market Basics</span>
+              <h3><a href="articles/fed-and-stocks.html">What the Fed Does to Your Portfolio (And Why It Matters)</a></h3>
+              <p>Interest rate decisions aren't just boring news — they can swing your entire portfolio. Here's the relationship explained without the econ jargon.</p>
+              <div class="card-footer-meta">
+                <span>📅 Mar 30, 2026</span>
+                <span>⏱ 8 min</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- More Posts -->
+        <div class="section-title">
+          <h2>More Reads</h2>
+          <div class="section-title-line"></div>
+        </div>
+
+        <div class="post-grid">
+          <article class="post-card">
+            <div class="card-img card-img-7">📋</div>
+            <div class="card-body">
+              <span class="post-tag tag-analysis">Analysis</span>
+              <h3><a href="articles/reading-stock-charts.html">How to Read a Stock Chart Without Losing Your Mind</a></h3>
+              <p>Candlesticks, moving averages, RSI — what actually matters for a regular investor and what you can safely ignore.</p>
+              <div class="card-footer-meta">
+                <span>📅 Mar 27, 2026</span>
+                <span>⏱ 10 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="card-img card-img-8">🌱</div>
+            <div class="card-body">
+              <span class="post-tag tag-etf">ETF</span>
+              <h3><a href="articles/etf-vs-stocks.html">ETFs vs. Individual Stocks: Honest Pros and Cons</a></h3>
+              <p>The eternal question. I've done both — here's what I actually think after years of trying different approaches.</p>
+              <div class="card-footer-meta">
+                <span>📅 Mar 24, 2026</span>
+                <span>⏱ 7 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="card-img card-img-1">🔄</div>
+            <div class="card-body">
+              <span class="post-tag tag-strategy">Strategy</span>
+              <h3><a href="articles/rebalancing.html">Portfolio Rebalancing: When to Do It and How Often</a></h3>
+              <p>Your original allocation drifts over time. Here's how rebalancing keeps you on track — without overcomplicating it.</p>
+              <div class="card-footer-meta">
+                <span>📅 Mar 20, 2026</span>
+                <span>⏱ 6 min</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Tools Section -->
+        <div class="section-title" style="margin-top:1.5rem">
+          <h2>Helpful Tools</h2>
+          <div class="section-title-line"></div>
+        </div>
+
+        <div class="tools-grid">
+          <div class="tool-card">
+            <div class="tool-icon tool-icon-1">🧮</div>
+            <div>
+              <h4>Compound Interest Calculator</h4>
+              <p>See how your money grows over time with compounding.</p>
+            </div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon tool-icon-2">📊</div>
+            <div>
+              <h4>Portfolio Visualizer</h4>
+              <p>Backtest and visualize portfolio performance over decades.</p>
+            </div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon tool-icon-3">🎯</div>
+            <div>
+              <h4>Dividend Yield Tracker</h4>
+              <p>Find and compare dividend yields across S&P 500 stocks.</p>
+            </div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon tool-icon-4">🔍</div>
+            <div>
+              <h4>Stock Screener</h4>
+              <p>Filter stocks by P/E ratio, market cap, sector, and more.</p>
+            </div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon tool-icon-5">📰</div>
+            <div>
+              <h4>Market News Feed</h4>
+              <p>Curated, bias-checked news that actually affects your holdings.</p>
+            </div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon tool-icon-6">📅</div>
+            <div>
+              <h4>Earnings Calendar</h4>
+              <p>Never miss an earnings report from companies you follow.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn">...</button>
+          <button class="page-btn">8</button>
+          <button class="page-btn">›</button>
+        </div>
+      </main>
+
+      <!-- RIGHT: SIDEBAR -->
+      <aside class="sidebar">
+
+        <div class="sidebar-widget search-widget">
+          <div class="widget-title">Search</div>
+          <div class="search-bar">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            <input type="text" placeholder="Search articles..." id="searchInput" />
+          </div>
+        </div>
+
+        <div class="sidebar-widget about-widget">
+          <div class="widget-title">About This Blog</div>
+          <div class="about-avatar">📈</div>
+          <h3>SmartStockUS</h3>
+          <p>A no-BS blog for regular people who want to invest in the US stock market without falling for hype. Independent, honest, and always free.</p>
+          <div class="social-links">
+            <a href="about.html" class="social-link" title="About">👤</a>
+            <a href="newsletter.html" class="social-link" title="Newsletter">📧</a>
+            <a href="resources.html" class="social-link" title="Resources">📚</a>
+          </div>
+        </div>
+
+        <div class="sidebar-widget newsletter-widget">
+          <div class="widget-title">Stay in the Loop</div>
+          <h3>Free Weekly Digest</h3>
+          <p>Market insights, new posts, and one actionable tip — every Sunday. No spam, unsubscribe anytime.</p>
+          <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+            <input type="email" placeholder="your@email.com" required />
+            <button type="submit">Get Free Updates →</button>
+          </form>
+        </div>
+
+        <div class="sidebar-widget">
+          <div class="widget-title">Categories</div>
+          <ul class="category-list">
+            <li><a href="#">Beginner Guides</a><span class="cat-count">12</span></li>
+            <li><a href="#">Investment Strategy</a><span class="cat-count">9</span></li>
+            <li><a href="#">Market Analysis</a><span class="cat-count">8</span></li>
+            <li><a href="#">Dividend Investing</a><span class="cat-count">7</span></li>
+            <li><a href="#">Growth Stocks</a><span class="cat-count">6</span></li>
+            <li><a href="#">ETFs & Funds</a><span class="cat-count">5</span></li>
+            <li><a href="#">Investor Mindset</a><span class="cat-count">4</span></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <div class="widget-title">Popular Posts</div>
+          <div class="popular-list">
+            <div class="popular-item">
+              <div class="popular-num">1</div>
+              <div>
+                <h4><a href="articles/start-investing.html">How to Start Investing With Just $100</a></h4>
+                <span>⏱ 9 min · 4.2K reads</span>
+              </div>
+            </div>
+            <div class="popular-item">
+              <div class="popular-num">2</div>
+              <div>
+                <h4><a href="articles/sp500-explained.html">The S&amp;P 500 Explained Simply</a></h4>
+                <span>⏱ 8 min · 3.8K reads</span>
+              </div>
+            </div>
+            <div class="popular-item">
+              <div class="popular-num">3</div>
+              <div>
+                <h4><a href="articles/investor-mistakes.html">5 Mistakes New Investors Make</a></h4>
+                <span>⏱ 6 min · 3.1K reads</span>
+              </div>
+            </div>
+            <div class="popular-item">
+              <div class="popular-num">4</div>
+              <div>
+                <h4><a href="articles/dollar-cost-averaging.html">Dollar-Cost Averaging Explained</a></h4>
+                <span>⏱ 7 min · 2.7K reads</span>
+              </div>
+            </div>
+            <div class="popular-item">
+              <div class="popular-num">5</div>
+              <div>
+                <h4><a href="articles/dividend-investing.html">Dividend Investing Basics</a></h4>
+                <span>⏱ 11 min · 2.4K reads</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-widget">
+          <div class="widget-title">Tags</div>
+          <div class="tags-cloud">
+            <a href="#">S&amp;P 500</a>
+            <a href="#">Beginner</a>
+            <a href="#">ETF</a>
+            <a href="#">Dividends</a>
+            <a href="#">NVDA</a>
+            <a href="#">Apple</a>
+            <a href="#">DCA</a>
+            <a href="#">Roth IRA</a>
+            <a href="#">401k</a>
+            <a href="#">Value</a>
+            <a href="#">Growth</a>
+            <a href="#">Fed</a>
+          </div>
+        </div>
+
+        <div class="sidebar-widget disclaimer-widget">
+          <div class="widget-title" style="color:#92400e; border-bottom-color:#fde68a;">⚠️ Disclaimer</div>
+          <p>SmartStockUS is for educational purposes only. Nothing here is financial advice. Always do your own research or consult a licensed financial advisor before investing. Investing involves risk, including the possible loss of principal.</p>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <div class="brand-icon">S</div>
+          SmartStockUS
+        </div>
+        <p>Friendly, independent writing about US stock market investing. No sales pitches, no paid promotions, no fluff — just honest content to help you grow your wealth.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Topics</h4>
+        <ul>
+          <li><a href="#">Beginner Guides</a></li>
+          <li><a href="#">Investment Strategy</a></li>
+          <li><a href="#">Market Analysis</a></li>
+          <li><a href="#">Dividend Stocks</a></li>
+          <li><a href="#">ETFs & Funds</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+          <li><a href="beginner-guide.html">Start Here</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 SmartStockUS. All content is for educational purposes only. Not financial advice.</span>
+      <span><a href="privacy.html">Privacy</a> · <a href="disclaimer.html">Disclaimer</a> · <a href="sitemap.html">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="app.js"></script>
+</body>
+</html>
